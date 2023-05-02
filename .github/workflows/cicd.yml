@@ -1,4 +1,4 @@
-name: project2
+name: project3
 on:
   push:
     branches:
@@ -40,7 +40,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           script: |
-            cd c25-wsp-project-02-tw
+            cd c25-bad-project-04-tw
             git pull origin main
             yarn install
             yarn knex migrate:latest --env production
