@@ -1,0 +1,88 @@
+.order {
+  background-color: rgb(255, 245, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  border: 0;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin: 3vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+h2 {
+  margin: 2vw;
+  color: rgb(255, 157, 29);
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 8vw;
+  font-size: 3.5vw
+}
+
+.confirm-order,
+.total-price,
+.payment-method {
+  width: 100%;
+  background-color: rgb(255, 251, 240);
+  text-align: left;
+  border: 0;
+  border-radius: 15px;
+  padding: 2vw 10px 2vw 10px;
+  margin: 2vw;
+  font-size: 2.5vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.payment-div {
+  width: 80%;
+  padding-right: 2vw;
+  padding-right: 7vw;
+}
+.payment-method {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.payment-column img {
+  width: 10vw;
+
+}
+
+.payment-column {
+  margin-bottom: 1vw;
+}
+.each-payment {
+  margin: 3vw;
+}
+
+.pay-btn {
+  font-size: 3vw;
+  margin: 3vw;
+  box-shadow: rgba(255, 157, 29, 0.5) 0px 3px 8px;
+  /* width: 10vw; */
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+}
+
+/* .fa-sharp .fa-solid .fa-circle-chevron-right ::before {
+  padding-top: 1vw;
+} */
+
+input {
+  font-size: 3vw;
+  margin: 0 2vw;
+}

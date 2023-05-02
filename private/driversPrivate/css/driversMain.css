@@ -1,0 +1,276 @@
+body {
+  background-color: rgb(255, 251, 240);
+}
+
+.bi-truck {
+  position: fixed;
+  font-size: 25vw;
+  color: rgb(255, 238, 193);
+  left: 70%;
+  bottom: 0;
+  z-index: -10;
+}
+
+.bi-truck-1 {
+  position: fixed;
+  font-size: 25vw;
+  color: rgb(255, 238, 193);
+  /* left: 70%; */
+  bottom: 0;
+  z-index: -10;
+}
+
+.navbar {
+  background-color: rgb(255, 245, 219);
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.menu_btn {
+  background-color: rgb(255, 227, 155);
+  border: 0;
+  border-radius: 15px;
+  color: rgb(255, 157, 29);
+  padding: 0 10px;
+  margin-left: 5vw;
+  box-shadow: rgba(255, 157, 29, 0.5) 0px 3px 8px;
+}
+
+.bi-list,
+.bi-x-lg {
+  color: rgb(255, 157, 29);
+  font-size: 3vw;
+}
+
+.logo {
+  width: 12vw;
+  text-align: center;
+}
+
+.empty {
+  padding: 0 10px;
+  margin: 0 6vw;
+}
+
+#offcanvasMenu {
+  background-color: rgb(255, 251, 240);
+}
+
+.offcanvas.offcanvas-start {
+  width: 30%
+}
+
+.close_button {
+  border: 0;
+  color: none;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.menu_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.menu_items,
+.menu_subitems {
+  text-align: center;
+  color: rgb(255, 157, 29);
+}
+
+.menu_items {
+  font-size: 3vw;
+  margin-top: 50px;
+}
+
+.menu_subitems {
+  font-size: 2vw;
+}
+
+#logout {
+  background-color: rgb(255, 227, 155);
+  border: 0;
+  border-radius: 15px;
+  color: rgb(255, 157, 29);
+  margin: 6vw 2vw 2vw 2vw;
+  padding: 8px;
+  font-size: 2.5vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.driver-info {
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 245, 219);
+  margin: 3vw ;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 157, 29);
+  padding: 0 2vw;
+  justify-content: center;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.bi-person-circle {
+  color: rgb(255, 157, 29);
+  font-size: 7vw;
+  margin-right: 2vw;
+}
+
+select {
+  border: 1px solid rgb(253, 202, 72);
+  margin: 0 3vw;
+  padding: 1vw;
+  height: 30%;
+  color: rgb(255, 184, 90);
+  font-size: 2.6vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+select :disabled {
+  background-color: rgba(208, 207, 205, 0.674);
+}
+
+.cfm-district {
+  background-color: rgb(255, 227, 155);
+  border: 0;
+  border-radius: 15px;
+  color: rgb(255, 157, 29);
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size: 2vw;
+}
+
+.single_order {
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 245, 219);
+  color: rgb(255, 157, 29);
+  display: flex;
+  flex-direction: row;
+  margin: 3vw ;
+  justify-content: space-between;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.order-text {
+  color: rgb(253, 202, 72);
+  margin: 0 2vw;
+  font-size: 2vw;
+}
+
+.driver-name {
+  font-size: 3.5vw;
+  margin: 10px;
+  color: rgb(253, 202, 72);
+}
+
+.role {
+  font-size: 2.5vw;
+  margin: 10px;
+  color: rgb(253, 202, 72);
+}
+
+.btn-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cfm-accept-order,
+.cfm-change-status,
+.history-details,
+.return_home {
+  background-color: rgb(255, 227, 155);
+  border: 0;
+  border-radius: 15px;
+  color: rgb(255, 157, 29);
+  padding: 5px 10px;
+  margin: 2vw;
+  font-size: 3vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.accept-order,
+.return-btn {
+  background-color: rgb(255, 227, 155);
+  border: 0;
+  border-radius: 15px;
+  color: rgb(255, 157, 29);
+  padding: 5px 10px;
+  margin: 2vw 1vw 2vw 0;
+  font-size: 3vw;
+  box-shadow: rgba(255, 157, 29, 0.5) 0px 3px 8px;
+}
+
+.pick_up_district_time,
+.deli_district_animal {
+  color: rgb(255, 157, 29);
+  margin: 0 2vw;
+  font-size: 3vw;
+}
+
+.confirm_order,
+#ongoing_orders,
+#order_history,
+.single-history {
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 245, 219);
+  margin: 3vw;
+  color: rgb(255, 157, 29);
+  margin: 3vw;
+  padding-bottom: 1.5vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.confirm_order_title,
+.driver_fee_title {
+  padding: 2vw 10px 0 10px;
+  margin: 2vw;
+  font-size: 3.5vw;
+  color: rgb(255, 157, 29);
+  text-align: center;
+}
+
+.confirm_order_text,
+.driver_fee_text {
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 251, 240);
+  color: rgb(253, 202, 72);
+  padding: 2vw 10px 2vw 10px;
+  margin: 2vw;
+  font-size: 2.5vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.order-success {
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 245, 219);
+  margin: 3vw;
+  color: rgb(255, 157, 29);
+  margin: 3vw 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.success {
+  font-size: 5vw;
+  margin: 10px;
+  color: rgb(255, 157, 29);
+}

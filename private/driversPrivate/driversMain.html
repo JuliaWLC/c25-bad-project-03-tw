@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="assets/img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./css/driversMain.css" />
+    <title>Chicken Van 24/7 Hailing Platform</title>
+  </head>
+  <body>
+    <i class="bi bi-truck"></i>
+    <div class="navbar">
+      <button
+        class="menu_btn"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasMenu"
+        role="button"
+        aria-controls="offcanvasMenu"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="./driversMain.html"
+            ><img
+              class="logo offcanvas-title"
+              id="offcanvasMenuLabel"
+              src="./assets/LOGO.png"
+              alt="logo"
+          /></a>
+          <i
+            class="bi bi-x-lg"
+            type="button"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+        </div>
+        <div class="offcanvas-body">
+          <div class="menu_content">
+            <a
+              class="menu_items"
+              style="text-decoration: none"
+              id="to_all_orders"
+              href="./driversMain.html"
+              >所有訂單</a
+            >
+            <a
+              class="menu_items"
+              style="text-decoration: none"
+              id="to_ongoing_orders"
+              href="./driversOngoing.html"
+              >實時訂單狀態</a
+            >
+            <a
+              class="menu_items"
+              style="text-decoration: none"
+              id="to_order_history"
+              href="./driversHistory.html"
+              >歷史訂單</a
+            >
+          </div>
+          <button id="logout">登出</button>
+        </div>
+      </div>
+      <a href="./driversMain.html"
+        ><img class="logo" src="./assets/LOGO.png" alt="logo"
+      /></a>
+      <div class="empty"></div>
+    </div>
+    <div class="driver-info"></div>
+    <select class="district-menu" onchange="showSelectedOrders()">
+      <option disabled selected>地區</option>
+    </select>
+    <div id="all_orders"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/drivers.js"></script>
+  </body>
+</html>

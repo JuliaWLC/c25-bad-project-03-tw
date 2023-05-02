@@ -1,0 +1,95 @@
+
+body {
+  background-color: rgb(255, 251, 240);
+}
+
+.content {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(253, 233, 183, 0.459);
+  border-radius: 15px;
+  margin-bottom: 8vh;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+
+}
+.bottom-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+::placeholder {
+  color: rgb(255, 157, 29);
+  font-size: 90%;
+  font-weight: Thin;
+}
+
+input, select, textarea{
+  border: 1px solid rgb(255, 157, 29);
+  color: rgb(255, 157, 29);
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+textarea:focus, input:focus, select:focus {
+  color: rgb(255, 157, 29);
+}
+
+.word, .word2 {
+  color: rgb(255, 157, 29);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 180%;
+}
+/* .word2 {
+  color: rgb(255, 157, 29);
+  font-weight: thin;
+  font-size: 90%;
+} */
+
+/* ::placeholder {
+  font-size: 2vw;
+} */
+
+input, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: larger;
+  line-height: inherit;
+}
+
+input, select {
+  border-radius: 1px;
+  border: 1px solid rgb(255, 157, 29);
+  width: 35vw;
+  height: 4vh;
+}
+.users-input {
+  padding: 5px;
+}
+.orange-button {
+  background-color: rgb(255, 157, 29);
+  border: 0;
+  border-radius: 5px;
+  width: 35vw;
+  height: 4vh;;
+  color: rgb(255, 227, 155);
+  margin-top: 2vh;
+  font-weight: bold;
+  box-shadow: rgba(225, 127, 0, 0.5) 0px 3px 8px;
+  margin-bottom: 3vh;
+}
+
+.logo-img{
+width: 15vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}

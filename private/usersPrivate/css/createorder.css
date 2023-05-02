@@ -1,0 +1,177 @@
+.order-form-div {
+  background-color: rgb(255, 245, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border: 0;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin: 3vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+/* .create-order-form {
+  margin-left: 5vw;
+  margin-right: 5vw;
+} */
+/* title */
+h3 {
+  margin: 2vw;
+  color: rgb(255, 157, 29);
+  text-align: center;
+  font-size: 3.5vw;
+}
+/* sub-title */
+p {
+  color: rgb(253, 202, 72);
+  margin-bottom: 0.5vw;
+  margin-top: 1vw;
+  text-align: left;
+  font-size: 2.5vw;
+}
+
+/* div align */
+.pick-up-address,
+.deliver-address,
+.animals-section,
+.remarks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: left;
+  
+}
+/* date and time width */
+.date {
+  width: 57%;
+  text-align: center;
+  letter-spacing: 6px;
+  padding: 5px;
+  margin-right: 0.6vw;
+}
+.time {
+  width: 37%;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 0.5vw;
+}
+
+/* animal title and plus btn */
+.sub-title-and-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* border */
+input,
+select,
+textarea {
+  border: 1px solid rgb(253, 202, 72);
+  margin: 1vw 1vw 1vw 0;
+  width: 100%;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+  padding: 5px;
+}
+
+/* template width */
+.clone-animal {
+  width: 100%;
+  height: 50%;
+}
+
+/* select  */
+select :disabled {
+  background-color: rgba(208, 207, 205, 0.674);
+}
+/* place holder */
+input,
+textarea,
+::placeholder {
+  color: rgb(253, 202, 72);
+  font-size: 2vw;
+}
+
+/* when there is input */
+input,
+select,
+textarea,
+:valid {
+  color: rgb(255, 157, 29);
+  font-size: 2vw;
+}
+
+/* can't change select color yet */
+/* select option:first-child {
+  color: green;
+} */
+option[value="null"] {
+  color: yellow;
+}
+
+textarea:focus,
+input:focus {
+  background: rgba(230, 227, 223, 0.453);
+}
+
+/*anm button */
+/* .add-animal,
+.remove-animal {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: rgb(253, 202, 72);
+  border: 1px solid rgb(253, 202, 72);
+  text-align: center;
+} */
+
+.bi-plus-circle-fill,
+.bi-dash-circle-fill {
+  /* padding: 5; */
+  color: rgb(253, 202, 72);
+  padding-left: 1vw;
+  padding-top: 1vw;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: rgb(255, 227, 155);
+  border: 0;
+  border-radius: 15px;
+  color: rgb(255, 157, 29);
+  margin: 3vw 0;
+  padding: 8px;
+  font-size: 3vw;
+}
+/* hi users */
+.user-info {
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(255, 245, 219);
+  margin: 3vw ;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 157, 29);
+  padding: 0 2vw;
+  justify-content: center;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.bi-person-circle {
+  color: rgb(255, 157, 29);
+  font-size: 7vw;
+  margin-right: 2vw;
+}
+
+.user-name {
+  font-size: 3.5vw;
+  margin: 10px;
+}
+
+.role {
+  font-size: 2.5vw;
+  margin: 10px;
+}

@@ -1,0 +1,10 @@
+orders_id,animals_id,animals_amount,animals_history_price
+1,4,1,30
+2,5,2,30
+3,6,3,30
+4,2,4,40
+5,7,1,30
+6,1,5,40
+7,3,1,30
+8,1,2,40
+9,2,4,40

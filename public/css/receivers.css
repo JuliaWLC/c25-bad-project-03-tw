@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(255, 251, 240);
+}
+
+.content {
+  font-size: large;
+}
+
+#receivers-form {
+  text-align: center;
+  background-color: rgba(253, 233, 183, 0.459);
+  border-radius: 15px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+::placeholder {
+  color: rgb(255, 157, 29);
+  font-size: 90%;
+  font-weight: Thin;
+}
+
+input, select, textarea{
+    color: rgb(255, 157, 29);
+}
+
+textarea:focus, input:focus {
+    color: rgb(255, 157, 29);
+}
+.word {
+  color: rgb(255, 157, 29);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+input {
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(255, 157, 29);
+  width: 35vw;
+  height: 4vh;
+}
+
+.orange-button {
+  background-color: rgb(255, 157, 29);
+  border: 0;
+  border-radius: 5px;
+  width: 35vw;
+  height: 4vh;;
+  color: rgb(255, 227, 155);
+  margin-top: 2vh;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+.logo-img{
+width: 15vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}

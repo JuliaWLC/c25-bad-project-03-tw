@@ -1,0 +1,95 @@
+.all-order-status {
+  background-color: rgb(255, 245, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  border: 0;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin: 3vw;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.ongoing-title {
+  /* margin-top: 2vw; */
+  padding: 0 10px 0 10px;
+  margin: 2vw;
+  font-size: 3.5vw;
+  color: rgb(255, 157, 29);
+  text-align: center;
+  font-weight: bold;
+}
+
+.details-btn,
+.cancel-btn {
+  font-size: 3vw;
+  /* width: 20vw; */
+}
+
+.each-order {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  width: 98%;
+  background-color: rgb(255, 251, 240);
+  margin-bottom: 2vw;
+  padding: 1vw;
+  border-radius: 15px;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+
+.order-text {
+  font-size: 2.5vw;
+}
+
+.order-status-div {
+  display: flex;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+.order-status {
+  width: 50%;
+  height: 100%;
+  padding: 1vw 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: self-start; */
+  background-color: rgb(255, 245, 219);
+  border-radius: 15px;
+  margin: 1vw 0;
+  box-shadow: rgba(255, 157, 29, 0.24) 0px 3px 8px;
+}
+/* .p {
+  text-align: left;
+} */
+.status-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 2vw;
+  /* justify-content: space-between; */
+  /* width: 40%; */
+}
+
+.fa-circle {
+  margin-right: 2vw;
+  margin-bottom: 1rem;
+}
+
+.arrow-div {
+  padding-bottom: 1vw;
+  padding-right: 2vw;
+  font-size: 2vw;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

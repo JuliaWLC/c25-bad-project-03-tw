@@ -1,0 +1,305 @@
+<!-- 用戶落單版面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!-- nav bar css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- sweet alert css -->
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <!-- font awesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- bootstrap icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+    />
+    <!-- my css -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link rel="stylesheet" href="./css/createorder.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <title>Chicken Van 24/7 Hailing Platform</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <button
+        class="menu_btn"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasMenu"
+        role="button"
+        aria-controls="offcanvasMenu"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="./usersMain.html"
+            ><img
+              class="logo offcanvas-title"
+              id="offcanvasMenuLabel"
+              src="./assets/LOGO.png"
+              alt="logo"
+          /></a>
+          <i
+            class="bi bi-x-lg"
+            type="button"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+        </div>
+        <div class="offcanvas-body">
+          <div class="menu_content">
+            <a
+              class="menu_items"
+              style="text-decoration: none"
+              href="./usersMain.html"
+              >建立訂單</a
+            >
+            <a
+              class="menu_items"
+              style="text-decoration: none"
+              href="./userhistoryorder.html"
+              >歷史訂單</a
+            >
+            <a
+              class="menu_items"
+              style="text-decoration: none"
+              href="./allorderstatus.html"
+              >實時訂單狀態</a
+            >
+          </div>
+          <button id="logout">登出</button>
+        </div>
+      </div>
+      <a href="./usersMain.html"
+        ><img class="logo" src="./assets/LOGO.png" alt="logo"
+      /></a>
+      
+      <div class="empty"></div>
+    </div>
+
+    <!-- user div  not yet-->
+
+    <!-- create order -->
+    <div class="user-info"></div>
+    <div class="order-form-div">
+      <form id="create-order-form">
+        <div class="form-area">
+          <h3><b>立即建立你的訂單</b></h3>
+          <div class="pick-up-time">
+            <p>收貨時間</p>
+            <input type="date" name="date" class="date" />
+            <input type="time" name="time" class="time" />
+          </div>
+
+          <p>接貨地址</p>
+          <div class="pick-up-address">
+            <!-- 中文版 -->
+            <select class="pick-up-district" name="pickUpDistrict">
+              <option value="" disabled selected>地區</option>
+              <option value="中西區">中西區</option>
+              <option value="東區">東區</option>
+              <option value="南區">南區</option>
+              <option value="灣仔區">灣仔區</option>
+              <option value="九龍城區">九龍城區</option>
+              <option value="觀塘區">觀塘區</option>
+              <option value="深水埗區">深水埗區</option>
+              <option value="黃大仙區">黃大仙區</option>
+              <option value="油尖旺區">油尖旺區</option>
+              <option value="離島區">離島區</option>
+              <option value="葵青區">葵青區</option>
+              <option value="北區">北區</option>
+              <option value="西貢區">西貢區</option>
+              <option value="沙田區">沙田區</option>
+              <option value="大埔區">大埔區</option>
+              <option value="荃灣區">荃灣區</option>
+              <option value="屯門區">屯門區</option>
+              <option value="元朗區">元朗區</option>
+            </select>
+            <!-- 英文版 -->
+            <!-- <select class="pick-up-district" name="pickUpDistrict">
+              <option value="" disabled selected>地區</option>
+              <option value="Central and Western">中西區</option>
+              <option value="Eastern">東區</option>
+              <option value="Southern">南區</option>
+              <option value="Wan Chai">灣仔區</option>
+              <option value="Kowloon City">九龍城區</option>
+              <option value="Kwun Tong">觀塘區</option>
+              <option value="Sham Shui Po">深水埗區</option>
+              <option value="Wong Tai Sin">黃大仙區</option>
+              <option value="Yau Tsim Mong">油尖旺區</option>
+              <option value="Islands">離島區</option>
+              <option value="Kwai Tsing">葵青區</option>
+              <option value="North">北區</option>
+              <option value="Sai Kung">西貢區</option>
+              <option value="Sha Tin">沙田區</option>
+              <option value="Tai Po">大埔區</option>
+              <option value="Tsuen Wan">荃灣區</option>
+              <option value="Tuen Mun">屯門區</option>
+              <option value="Yuen Long">元朗區</option>
+            </select> -->
+
+            <input type="text" class="pick-up-room" name="pickUpRoom" placeholder="室號" value="" />
+            <input type="text" class="pick-up-floor" name="pickUpFloor" placeholder="樓層" value="20" />
+            <input
+              type="text"
+              class="pick-up-building"
+              name="pickUpBuilding"
+              placeholder="大廈及屋苑"
+              value=""
+            />
+            <input
+              type="text"
+              class="pick-up-street"
+              name="pickUpStreet"
+              placeholder="街號及街道名稱"
+              value=""
+            />
+          </div>
+
+          <div class="deliver-address">
+            <p>收貨地址</p>
+            <!-- 中文版 -->
+            <select name="deliverDistrict">
+              <option value="" disabled selected>地區</option>
+              <option value="中西區">中西區</option>
+              <option value="東區">東區</option>
+              <option value="南區">南區</option>
+              <option value="灣仔區">灣仔區</option>
+              <option value="九龍城區">九龍城區</option>
+              <option value="觀塘區">觀塘區</option>
+              <option value="深水埗區">深水埗區</option>
+              <option value="黃大仙區">黃大仙區</option>
+              <option value="油尖旺區">油尖旺區</option>
+              <option value="離島區">離島區</option>
+              <option value="葵青區">葵青區</option>
+              <option value="北區">北區</option>
+              <option value="西貢區">西貢區</option>
+              <option value="沙田區">沙田區</option>
+              <option value="大埔區">大埔區</option>
+              <option value="荃灣區">荃灣區</option>
+              <option value="屯門區">屯門區</option>
+              <option value="元朗區">元朗區</option>
+            </select>
+
+            <!--英文版  -->
+            <!-- <select name="deliverDistrict">
+              <option value="" disabled selected>地區</option>
+              <option value="Central and Western">中西區</option>
+              <option value="Eastern">東區</option>
+              <option value="Southern">南區</option>
+              <option value="Wan Chai">灣仔區</option>
+              <option value="Kowloon City">九龍城區</option>
+              <option value="Kwun Tong">觀塘區</option>
+              <option value="Sham Shui Po">深水埗區</option>
+              <option value="Wong Tai Sin">黃大仙區</option>
+              <option value="Yau Tsim Mong">油尖旺區</option>
+              <option value="Islands">離島區</option>
+              <option value="Kwai Tsing">葵青區</option>
+              <option value="North">北區</option>
+              <option value="Sai Kung">西貢區</option>
+              <option value="Sha Tin">沙田區</option>
+              <option value="Tai Po">大埔區</option>
+              <option value="Tsuen Wan">荃灣區</option>
+              <option value="Tuen Mun">屯門區</option>
+              <option value="Yuen Long">元朗區</option>
+            </select> -->
+
+            <input type="text" name="deliverRoom" placeholder="室號" value="" />
+            <input type="text" name="deliverFloor" placeholder="樓層" value="" />
+            <input type="text" name="deliverBuilding" placeholder="大廈及屋苑" value="" />
+            <input type="text" name="deliverStreet" placeholder="街號及街道名稱" value="" />
+          </div>
+
+          <div class="receiver-contact">
+            <p>收件人聯絡資料</p>
+            <input type="text" name="receiverName" placeholder="姓名" value="" />
+            <input type="text" name="receiver_contact" placeholder="聯絡電話" value="" />
+          </div>
+
+          <div class="animals-section">
+            <span class="sub-title-and-btn">
+              <p>運送動物 (總數最多5只)</p>
+              <i class="bi bi-plus-circle-fill add-animal"></i>
+              <!-- <button class="add-animal"></button> -->
+            </span>
+            <select name="animals_id">
+              <option value="" disabled selected>動物</option>
+              <option value="1">貓</option>
+              <option value="2">狗</option>
+              <option value="3">雞</option>
+              <option value="4">鴨</option>
+              <option value="5">鵝</option>
+              <option value="6">龜</option>
+              <option value="7">海洋生物</option>
+            </select>
+            <select name="animals_amount" class="num-of-anm">
+              <option value="" disabled selected>動物數量</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+            <template id="new-animal-column">
+              <div class="clone-animal">
+                <select name="animals_id">
+                  <option value="" disabled selected>動物</option>
+                  <option value="1">貓</option>
+                  <option value="2">狗</option>
+                  <option value="3">雞</option>
+                  <option value="4">鴨</option>
+                  <option value="5">鵝</option>
+                  <option value="6">龜</option>
+                  <option value="7">海洋生物</option>
+                </select>
+                <select name="animals_amount" class="num-of-anm">
+                  <option value="" disabled selected>動物數量</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <i class="bi bi-dash-circle-fill remove-animal"></i>
+              </div>
+            </template>
+          </div>
+
+          <div class="remarks">
+            <p>備註</p>
+            <input type="text" name="remarks" placeholder="額外資料" value="" />
+          </div>
+          <input type="submit" value="提交訂單" class="submit-btn" />
+        </div>
+      </form>
+    </div>
+    <!-- my js -->
+    <script src="./js/createorder.js"></script>
+    <!-- <script src = "./js/userlogout.js"></script> -->
+    <!-- nav bar js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <!-- sweet alert js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

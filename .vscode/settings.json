@@ -1,0 +1,30 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "wspproject",
+      "database": "demo",
+      "username": "postgres",
+      "password": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "project2",
+      "database": "project2",
+      "username": "postgres",
+      "password": "postgres"
+    }
+  ],
+  "cSpell.words": [
+    "createaccount",
+    "driverslogin",
+    "receivertoken",
+    "userslogin"
+  ]
+}

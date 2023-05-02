@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="assets/img/favicon.png" rel="icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/createAccount.css" />
+    <title>Users Create Account</title>
+  </head>
+  <body>
+    <a href="index.html">
+    <div class="logo">
+      <img
+        class="logo-img"
+        id="offcanvasMenuLabel"
+        src="./assets/LOGO.png"
+        alt="logo"
+      />
+    </div>
+    </a>
+    <div class="content">
+      <div class="container">
+        <form id="create-users">
+          <div class="word">創建會員賬號</div>
+          <div class="users-input">
+            <input type="text" name="newUserLastName" placeholder="姓氏" />
+          </div>
+          <div class="users-input">
+            <input type="text" name="newUserFirstName" placeholder="名稱" />
+          </div>
+          <div class="users-input">
+            <input type="text" name="newUserTitle" placeholder="稱謂" />
+          </div>
+          <div class="users-input">
+            <input type="text" name="newUserEmail" placeholder="電郵" />
+          </div>
+          <div class="users-input">
+            <input
+              type="password"
+              name="newUserPassword"
+              id="password"
+              placeholder="密碼"
+            />
+          </div>
+          <div class="users-input">
+            <input
+              type="password"
+              id="passwordConfirm"
+              placeholder="確認密碼"
+            />
+          </div>
+          <div class="users-input">
+            <input
+              type="text"
+              name="newUserContactNum"
+              placeholder="電話號碼"
+            />
+          </div>
+          <div class="word2">預設收貨地址</div>
+          <div class="users-input">
+            <select class="default-district" name="newUserDefaultDistrict">
+              <option value="" disabled selected>地區</option>
+              <option value="中西區">中西區</option>
+              <option value="東區">東區</option>
+              <option value="南區">南區</option>
+              <option value="灣仔區">灣仔區</option>
+              <option value="九龍城區">九龍城區</option>
+              <option value="觀塘區">觀塘區</option>
+              <option value="深水埗區">深水埗區</option>
+              <option value="黃大仙區">黃大仙區</option>
+              <option value="油尖旺區">油尖旺區</option>
+              <option value="離島區">離島區</option>
+              <option value="葵青區">葵青區</option>
+              <option value="北區">北區</option>
+              <option value="西貢區">西貢區</option>
+              <option value="沙田區">沙田區</option>
+              <option value="大埔區">大埔區</option>
+              <option value="荃灣區">荃灣區</option>
+              <option value="屯門區">屯門區</option>
+              <option value="元朗區">元朗區</option>
+            </select>
+          </div>
+          <div class="users-input">
+            <input type="text" name="pickUpRoom" placeholder="室號" />
+          </div>
+          <div class="users-input">
+            <input type="text" name="pickUpFloor" placeholder="樓層" />
+          </div>
+          <div class="users-input">
+            <input type="text" name="pickUpBuilding" placeholder="大廈及屋苑" />
+          </div>
+          <div class="users-input">
+            <input
+              type="text"
+              name="pickUpStreet"
+              placeholder="街號及街道名稱"
+            />
+          </div>
+          <div> 
+            <button type="submit" class="orange-button">創建賬戶</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/usersNewAccount.js"></script>
+  </body>
+</html>

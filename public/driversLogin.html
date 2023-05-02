@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="assets/img/favicon.png" rel="icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Drivers Login</title>
+  </head>
+  <body>
+    <a href="index.html">
+    <div class="logo">
+      <img
+        class="logo-img"
+        id="offcanvasMenuLabel"
+        src="./assets/LOGO.png"
+        alt="logo"
+      />
+    </div>
+    </a>
+    <div class="content">
+      <div class="login-container">
+        <form id="drivers-login-form">
+          <div class="username-input">
+            <div class="word">司機登入</div>
+            <input
+              type="text"
+              name="driversEmail"
+              id="username"
+              placeholder="電郵地址"
+            />
+          </div>
+          <div class="password-input">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="密碼"
+            />
+          </div>
+          <div>
+            <input type="submit" value="登入" class="member_login" />
+          </div>
+        </form>
+        <form action="/login/driver" method="get">
+          <button class="member_googleLogin">
+            <i class="bi bi-google"></i> 司機Google登入
+          </button>
+        </form>
+          <div>
+          <div class="word2">還不是我們的司機？</div>
+          <button id="member_create">立即登記</button>
+        </div>
+        
+      </div>
+
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/driversLogin.js"></script>
+  </body>
+</html>
